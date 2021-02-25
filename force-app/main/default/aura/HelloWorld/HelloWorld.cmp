@@ -1,0 +1,9 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name="greeting" type="string" default="World" />  
+    <article class="slds-card">
+        <div class="slds-card__body slds-card__body_inner slds-p-top_medium">
+            <lightning:input aura:id="myInput" type="text" value="{!v.greeting}" /><br/>
+            Hello, {!v.greeting}!!            
+        </div>
+    </article>
+</aura:component>
